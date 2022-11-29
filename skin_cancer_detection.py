@@ -137,11 +137,11 @@ def main():
                 st.image(image, caption='Sample Data', use_column_width=True)
                 st.subheader("Choose Training Algorithm!")
                 if st.checkbox('Keras'):
-                    model = load_models()
+                    model1 = load_models()
                     st.success("Hooray !! Keras Model Loaded!")
                     if st.checkbox('Show Prediction Probablity on Sample Data'):
                         x_test = data_gen('angry542545.jfif')
-                        y_new, Y_pred_classes = predict(x_test, model)
+                        y_new, Y_pred_classes = predict(x_test, model1)
                         result = display_prediction(y_new)
                         st.write(result)
                         if st.checkbox('Display Probability Graph'):
@@ -171,10 +171,10 @@ def main():
                      use_column_width=True)
             st.subheader("Choose Training Algorithm!")
             if st.checkbox('Keras'):
-                model = load_models()
+                model1 = load_models()
                 st.success("Hooray !! Keras Model Loaded!")
                 if st.checkbox('Show Prediction Probablity for Uploaded Image'):
-                    y_new, Y_pred_classes = predict(x_test, model)
+                    y_new, Y_pred_classes = predict(x_test, model1)
                     result = display_prediction(y_new)
                     st.write(result)
                     if st.checkbox('Display Probability Graph'):

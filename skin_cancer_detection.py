@@ -55,6 +55,7 @@ def data_gen_(img):
 
 
 def load_models():
+    global model
     from pathlib import Path
     path_name = "model.h5"
     p = Path(path_name)

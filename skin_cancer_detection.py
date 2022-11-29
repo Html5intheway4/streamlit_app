@@ -60,7 +60,7 @@ def load_models():
     p = Path(path_name)
     if p.is_file():
         print("File exists")
-        model = tf.keras.models.load_model('model.h5')    
+        model = tf.keras.models.load_model(path_name)    
         #Execute other file operations here
         
     

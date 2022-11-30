@@ -55,20 +55,20 @@ def data_gen_(img):
 
 
 def load_models():
-    global model
-    from pathlib import Path
-    path_name = "https://github.com/Html5intheway4/streamlit_app/blob/3150f69b911fd1763edddc35051f17c790422bca/model.h5"
-    p = Path(path_name)
-    if p.is_file():
-        print("File exists")
-        model = tf.keras.models.load_model(path_name)    
-        #Execute other file operations here
+    #global model
+#     from pathlib import Path
+#     path_name = "https://github.com/Html5intheway4/streamlit_app/blob/3150f69b911fd1763edddc35051f17c790422bca/model.h5"
+#     p = Path(path_name)
+#     if p.is_file():
+#         print("File exists")
+#         model = tf.keras.models.load_model(path_name)    
+#         #Execute other file operations here
         
     
-    else:
-        print("File does not exist! IOError has occured")
+#     else:
+#         print("File does not exist! IOError has occured")
 
-    # model = tf.keras.models.load_model('model.h5')
+    model = tf.keras.models.load_model('https://github.com/Html5intheway4/streamlit_app/blob/3150f69b911fd1763edddc35051f17c790422bca/model.h5')
     return model
 
 # def load_models():

@@ -68,7 +68,7 @@ def load_models():
 #     else:
 #         print("File does not exist! IOError has occured")
 
-    model = tf.keras.models.load_model(''./model.h5'')
+    model = tf.keras.models.load_model("model.h5")
     return model
 
 # def load_models():

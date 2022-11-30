@@ -57,7 +57,7 @@ def data_gen_(img):
 def load_models():
     global model
     from pathlib import Path
-    path_name = "model.h5"
+    path_name = "https://github.com/Html5intheway4/streamlit_app/blob/3150f69b911fd1763edddc35051f17c790422bca/model.h5"
     p = Path(path_name)
     if p.is_file():
         print("File exists")
